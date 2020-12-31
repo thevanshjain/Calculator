@@ -30,7 +30,7 @@ function simplify(symbol) {
     }
     }
     operator=symbol;
-    result.innerText=parseInt(prev);
+    result.innerText=(prev);
     temp='';
 }
 function tapped(symbol) {
@@ -66,6 +66,7 @@ function tapped(symbol) {
     }
     else {
         simplify(symbol);
+        operator=symbol;
     }
 }
 function clicked() {
